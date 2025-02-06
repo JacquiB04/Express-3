@@ -1,0 +1,93 @@
+<!-- Jacqui Bouchard	Homework 2	CS341 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cheesecake Order Form</title>
+	<link rel="stylesheet" href="stylesheets/boucharj27.css"> <!-- link to my css file -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+</head>
+<body>
+
+   <h1>Cheesecake Order Form</h1>
+
+   <!-- Accessing the Cheesecake slice image via a URL -->
+
+   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake" width="150" height="150" padding-right="60">
+
+   <div id="extraImage"></div><br>
+
+   <!-- Make the drop down quantity options and the topping radio buttons -->
+	<p>
+		<!-- Quantity -->
+		<label for="quantity" class="form">Quantity</label><br>
+		<select name="quantity" class="form" id="quantity">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+		</select>
+	</p>
+
+	<p>
+		<!-- Topping -->
+		<label for="topping" class="form">Topping</label><br>
+		<input type="radio" class="form" id="plain" name="topping" value="Plain">
+		<label for="plain" class="form">Plain</label><br>
+		<input type="radio" class="form" id="cherry" name="topping" value="Cherry">
+		<label for="cherry" class="form">Cherry</label><br>
+		<input type="radio" class="form" id="chocolate" name="topping" value="Chocolate">
+		<label for="chocolate" class="form">Chocolate</label>
+		<br>
+	</p>
+
+	<!-- Used to print an order confirmation -->
+	<p id="review"></p>
+
+	<!-- Creating the Notes textbox -->
+	<label for="noteslabel" class="form">Notes:</label><br>
+	<textarea style="color:grey;" class="form" id="notes" name="notes" rows="6" cols="50">Enter any special instructions here.</textarea>
+	<br><br>
+
+	<!-- The order button -->
+	<input class="form" style="background-color:lightgrey;" type="submit" value="Order" id="order">  
+	<br><br>
+
+   <!-- Dropdown menu for past order month choice -->
+	<!-- See .css document for external citations -->
+	<div class="dropdown">
+   		<h3>Orders for
+			<button class="dropbtn">Jan</button>
+				<div class="dropdown-content">
+					<a href="#" data-value="Jan">Jan</a>
+					<a href="#" data-value="Feb">Feb</a>
+					<a href="#" data-value="Mar">Mar</a>
+					<a href="#" data-value="Apr">Apr</a>
+					<a href="#" data-value="May">May</a>
+					<a href="#" data-value="June">June</a>
+					<a href="#" data-value="July">July</a>
+					<a href="#" data-value="Aug">Aug</a>
+					<a href="#" data-value="Sept">Sept</a>
+					<a href="#" data-value="Oct">Oct</a>
+					<a href="#" data-value="Nov">Nov</a>
+					<a href="#" data-value="Dec">Dec</a>
+				</div>
+		</h3>
+	</div>
+
+   <!-- List of past orders -->
+   <ul id="past-order-list">
+		<li>11 cherry</li>
+		<li>17 chocolate</li>
+		<li>31 plain</li>
+   	</ul>
+
+   <!-- HW3 MODIFICATIONS -->
+	<script src="javascripts/cheesecake.js"></script>
+
+</body>
+</html>
