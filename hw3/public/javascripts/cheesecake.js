@@ -1,5 +1,7 @@
-//HELPER METHODS
+//Author: Jacqui Bouchard
+//HW 3
 
+//HELPER METHODS
 getFormDetails = function() {
     if ($("#notes").val().indexOf("vegan") !== -1) {
         window.alert("WARNING! These cheesecakes contain dairy.");
