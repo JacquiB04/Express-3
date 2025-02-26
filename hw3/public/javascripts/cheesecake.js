@@ -29,8 +29,5 @@ updateMonth = function() {
 }
 
 //METHOD CALLS FOR INDEX.HTML
-$(document).ready(function() {
-    $("#order").on("click", getFormDetails);
-
-    $(".dropdown-content a").click(updateMonth);
-});
+$("#order").on("click", getFormDetails);
+$(".dropdown-content a").on("click", updateMonth);

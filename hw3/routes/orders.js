@@ -14,7 +14,7 @@ myArray = [myObj1, myObj2, myObj3];
 
 myJSON = JSON.stringify(myArray);
 
-// Define a simple route for orders
+//Define a route for the orders
 router.get('/', (req, res) => {
     res.send(myJSON);
 });
