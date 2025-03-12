@@ -63,27 +63,27 @@
    		<h3>Orders for
 			<button class="dropbtn">Jan</button>
 				<div class="dropdown-content">
-					<a href="#" data-value="Jan">Jan</a>
-					<a href="#" data-value="Feb">Feb</a>
-					<a href="#" data-value="Mar">Mar</a>
-					<a href="#" data-value="Apr">Apr</a>
-					<a href="#" data-value="May">May</a>
-					<a href="#" data-value="June">June</a>
-					<a href="#" data-value="July">July</a>
-					<a href="#" data-value="Aug">Aug</a>
-					<a href="#" data-value="Sept">Sept</a>
-					<a href="#" data-value="Oct">Oct</a>
-					<a href="#" data-value="Nov">Nov</a>
-					<a href="#" data-value="Dec">Dec</a>
+					<a href="#" onclick=updateMonth() data-value="Jan">Jan</a>
+					<a href="#" onclick=updateMonth() data-value="Feb">Feb</a>
+					<a href="#" onclick=updateMonth() data-value="Mar">Mar</a>
+					<a href="#" onclick=updateMonth() data-value="Apr">Apr</a>
+					<a href="#" onclick=updateMonth() data-value="May">May</a>
+					<a href="#" onclick=updateMonth() data-value="June">June</a>
+					<a href="#" onclick=updateMonth() data-value="July">July</a>
+					<a href="#" onclick=updateMonth() data-value="Aug">Aug</a>
+					<a href="#" onclick=updateMonth() data-value="Sept">Sept</a>
+					<a href="#" onclick=updateMonth() data-value="Oct">Oct</a>
+					<a href="#" onclick=updateMonth() data-value="Nov">Nov</a>
+					<a href="#" onclick=updateMonth() data-value="Dec">Dec</a>
 				</div>
 		</h3>
 	</div>
 
    <!-- List of past orders -->
    <ul id="past-order-list">
-		<li>11 cherry</li>
-		<li>17 chocolate</li>
-		<li>31 plain</li>
+		<li id="line1">11 cherry</li>
+		<li id="line2">17 chocolate</li>
+		<li id="line3">31 plain</li>
    	</ul>
 
    <!-- HW3 MODIFICATIONS -->

@@ -1,4 +1,5 @@
-const PORT = 3000;
+//Jacqui Bouchard
+const PORT = 3002;
 
 var createError = require('http-errors');
 var express = require('express');
